@@ -9,6 +9,7 @@ install:
 
 script:
   - make verify-commits
+  - go vet ./...
 
 notifications:
   irc: "chat.freenode.net#openshift-dev"
